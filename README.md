@@ -20,3 +20,33 @@ documentation that will be beneficial to you: https://docs.ultralytics.com/
 ### *Dataset*
 In this project, I used the Roboflow dataset https://universe.roboflow.com/test-shyto/available_storage
 
+### *Training YOLOv8 based on Available storage*
+-To understand well the training process follow this link :https://docs.ultralytics.com/modes/train/#why-choose-ultralytics-yolo-for-training
+-To customize YOLOv8 for the Available storage dataset, run the following command : 
+
+<pre><code>
+from ultralytics import YOLO 
+# Load the model.
+model = YOLO('yolov8n.pt') 
+# Training.
+results = model.train(
+   data="path to dataset\data.yaml',    
+   imgsz=640,
+   epochs=50,
+   batch=8,)
+</code></pre>
+
+### *Loading available storage pre-trained model*  
+
+<pre><code>
+from ultralytics import YOLO
+model = YOLO('weight_path'\available-storage.pt')
+ </code></pre>
+
+### *Detection of available storage*  
+
+<pre><code>
+display(Image.open('runs/detect/predict/as.jpg'))
+  </code></pre>
+
+
