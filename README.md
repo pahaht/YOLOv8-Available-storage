@@ -5,7 +5,7 @@ The YOLOv8 model is utilized to detect and localize areas where storage space is
 The model is trained on a dataset containing images with labeled available storage areas. Once trained, 
 the model can be used to identify and mark available storage spaces in real-time.
 
-![alt text]( https://github.com/pahaht/YOLOv8-Available-storage/blob/main/images/AS.JPG)   
+![alt text]( https://github.com/pahaht/YOLOv8-Available-storage/blob/main/images/as5.JPG)   
 
 
  ## Features 
